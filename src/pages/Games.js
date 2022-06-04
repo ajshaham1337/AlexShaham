@@ -6,7 +6,7 @@ const Games = () => {
   const [games, setGames] = useState([])
 
   useEffect(() => {
-    fetch('/data/db.json')
+    fetch('%PUBLIC_URL%/data/db.json')
       .then(response => response.json())
       .then(({ games }) => games)
       .then(data => setGames(data))
