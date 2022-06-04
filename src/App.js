@@ -9,9 +9,6 @@ function App() {
   const [content, setContent] = useState('Games');
   const value = {content, setContent};
 
-  console.log(ContentContext);
-  console.log(value);
-
   return (
     <ContentContext.Provider value={value}>
       <ResponsiveAppBar/>

@@ -5,12 +5,14 @@ import ProjectCard from '../components/ProjectCard';
 const Games = () => {
   const [games, setGames] = useState([])
 
+  console.log('part 1: ', Object.keys(games));
   useEffect(() => {
-    fetch('%PUBLIC_URL%/data/db.json')
+    fetch('/data/db.json')
       .then(response => response.json())
       .then(({ games }) => games)
       .then(data => setGames(data))
   }, []);
+  console.log('part 2: ', Object.keys(games));
 
   return (
     <Container>
