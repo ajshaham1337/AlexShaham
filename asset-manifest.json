@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/Portfolio/static/js/main.53ec6fd0.js",
+    "main.js": "/Portfolio/static/js/main.b59dfd42.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/fakebookmarketplace.png": "/Portfolio/static/media/fakebookmarketplace.2206970401e33505e0c8.png",
     "static/media/beastwithin.png": "/Portfolio/static/media/beastwithin.975507d78661f6570e4d.png",
     "static/media/emailapp.png": "/Portfolio/static/media/emailapp.5738e8e26dde841f49be.png",
+    "static/media/portfolio.png": "/Portfolio/static/media/portfolio.91d700d5df1639177d56.png",
+    "static/media/wordlecube.png": "/Portfolio/static/media/wordlecube.fb30520e87484eb76a7b.png",
     "static/media/qoth.png": "/Portfolio/static/media/qoth.681ba46a5db2c31bd98c.png",
-    "static/media/keepieuppies.png": "/Portfolio/static/media/keepieuppies.a634417d981c01d5fa23.png",
     "static/media/puffedup.png": "/Portfolio/static/media/puffedup.392dda579e0e6a01543b.png",
     "static/media/barf.png": "/Portfolio/static/media/barf.5e44d3bd5e86a1ff0c70.png",
     "static/media/calendarapp.png": "/Portfolio/static/media/calendarapp.2098d88ce41eda913f62.png",
     "static/media/retrosu.png": "/Portfolio/static/media/retrosu.99e5a7bcc4d50e7299f8.png",
     "index.html": "/Portfolio/index.html",
     "main.073c9b0a.css.map": "/Portfolio/static/css/main.073c9b0a.css.map",
-    "main.53ec6fd0.js.map": "/Portfolio/static/js/main.53ec6fd0.js.map",
+    "main.b59dfd42.js.map": "/Portfolio/static/js/main.b59dfd42.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.53ec6fd0.js"
+    "static/js/main.b59dfd42.js"
   ]
 }
