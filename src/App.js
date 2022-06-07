@@ -1,6 +1,5 @@
 import './App.css';
 import React, { useState } from 'react';
-
 import { ContentContext } from './ContentContext';
 import ResponsiveAppBar from './components/ResponsiveAppBar';
 import ResponsiveBody from './components/ResponsiveBody';

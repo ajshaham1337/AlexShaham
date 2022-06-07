@@ -1,34 +1,96 @@
 {
     "games": [
         {
-            "title": "insert game name here 0",
-            "details": "cool game 0",
-            "category": "game 0",
-            "id": 0
+            "picture": "/Portfolio/static/media/qoth.681ba46a5db2c31bd98c.png", 
+            "title": "Queen Of The Hill",
+            "role": "Role: Programmer",
+            "code": "Code: Javascript",
+            "description": "An ant inspired civilization game based on idle-clicking.",
+            "link": "https://ajshaham1337.github.io/Queen-of-The-Hill/"
         },
         {
-            "title": "insert game name here 1",
-            "details": "cool game 1",
-            "category": "game 1",
-            "id": 1
+            "picture": "/Portfolio/static/media/wordlecube.fb30520e87484eb76a7b.png", 
+            "title": "Wordle Cube",
+            "role": "Role: Solo Project",
+            "code": "Code: C# & Unity",
+            "description": "A Wordle clone based on the premise of solving a Rubik's Cube.",
+            "link": "https://ajshaham1337.github.io/WordleCube/"
         },
         {
-            "title": "insert game name here 2",
-            "details": "cool game 2",
-            "category": "game 2",
-            "id": 2
+            "picture": "/Portfolio/static/media/keepieuppies.a634417d981c01d5fa23.png", 
+            "title": "Keepie Uppies",
+            "role": "Role: Programmer",
+            "code": "Code: C# & Unity - Android",
+            "description": "An infinite runner mobile game for android based on staying afloat.",
+            "link": "https://play.google.com/store/apps/details?id=com.KU.com.unity.template.mobile2D"
         },
         {
-            "title": "insert game name here 3",
-            "details": "cool game 3",
-            "category": "game 3",
-            "id": 3
+            "picture": "/Portfolio/static/media/puffedup.392dda579e0e6a01543b.png",
+            "title": "Puffed Up",
+            "role": "Role: Programmer & Producer",
+            "code": "Code: Javascript & Phaser3",
+            "description": "A pufferfish knight navigates a dangerous dungeon.",
+            "link": "https://ajshaham1337.github.io/Puffed-Up/"
         },
         {
-            "title": "insert game name here 4",
-            "details": "cool game 4",
-            "category": "game 4",
-            "id": 4
+            "picture": "/Portfolio/static/media/barf.5e44d3bd5e86a1ff0c70.png",
+            "title": "Barf",
+            "role": "Role: Programmer & Producer",
+            "code": "Code: Javascript & Phaser3",
+            "description": "A salaryman engages in a night of shenanigans after clocking out from work.",
+            "link": "https://ajshaham1337.github.io/BarF/"
+        },
+        {
+            "picture": "/Portfolio/static/media/retrosu.99e5a7bcc4d50e7299f8.png",
+            "title": "Retrosu",
+            "role": "Role: Programmer",
+            "code": "Code: Javascript & Crisp-game-lib",
+            "description": "An arcade styled version of the reknowned rhythm game 'Osu!'",
+            "link": "https://ajshaham1337.github.io/RetrOsu/"
+        },
+        {
+            "picture": "/Portfolio/static/media/beastwithin.975507d78661f6570e4d.png",
+            "title": "Beast Within",
+            "role": "Role: Programmer & Producer",
+            "code": "Code: Javascript & Phaser3",
+            "description": "A story based game jam for Ludum Dare 49 with the theme of stability.",
+            "link": "https://ajshaham1337.github.io/Beast-Within/"
+        }
+    ],
+    "tools": [
+        {
+            "picture": "/Portfolio/static/media/fakebookmarketplace.2206970401e33505e0c8.png", 
+            "title": "Fakebook Marketplace",
+            "role": "Role: Front-End Programmer",
+            "code": "Code: Javascript & React & MUI",
+            "description": "A recreation of Facebook's world famous market place. (Code Hidden per teacher's request)",
+            "link": "https://www.youtube.com/watch?v=fYKFSpuTiNs"
+        },
+        {
+            "picture": "/Portfolio/static/media/portfolio.91d700d5df1639177d56.png", 
+            "title": "Portfolio",
+            "role": "Role: Solo Project",
+            "code": "Code: Javascript & React & MUI",
+            "description": "A personal portfolio made to showcase my work and tell more about myself.",
+            "link": "https://ajshaham1337.github.io/Portfolio/"
+        },
+        {
+            "picture": "/Portfolio/static/media/emailapp.5738e8e26dde841f49be.png", 
+            "title": "Email App",
+            "role": "Role: Solo Project",
+            "code": "Code: Javascript & React & MUI",
+            "description": "A simple front-end email app as an intro to MUI (Code Hidden per teacher's request)",
+            "link": "https://github.com/ajshaham1337/EmailApp"
+        },
+        {
+            "picture": "/Portfolio/static/media/calendarapp.2098d88ce41eda913f62.png", 
+            "title": "Calender App",
+            "role": "Role: Solo Project",
+            "code": "Code: Javascript & React",
+            "description": "A web based calendar app as an intro to React (Code Hidden per teacher's request)",
+            "link": "https://github.com/ajshaham1337/CalendarApp"
         }
     ]
+
+    
 }

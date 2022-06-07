@@ -6,7 +6,7 @@ import Games from '../pages/Games';
 import Contact from '../pages/Contact';
 import About from '../pages/About';
 
-const ResponsiveBody = () => {
+function ResponsiveBody() {
   const { content } = React.useContext(ContentContext);
 
   if (content === 'Games') {
