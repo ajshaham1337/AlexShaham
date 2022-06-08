@@ -1,26 +1,15 @@
-import { createTheme } from '@mui/material';
+import { createTheme } from '@mui/material'
+
+// https://bareynol.github.io/mui-theme-creator/
+// https://mui.com/material-ui/customization/default-theme/
 
 const theme = createTheme({
   palette: {
     mode: 'dark',
-    // primary: {
-    //   main: '#42a5f5'
-    // },
-    // secondary: {
-    //   main: '#ce93d8'
-    // },
-    // error: {
-    //   main: '#f44336'
-    // },
-    // warning: {
-    //   main: '#ffa726'
-    // },
-    // info: {
-    //   main: '#29b6f6'
-    // },
-    // success: {
-    //   main: '#66bb6a'
-    // },
+    background: {
+      default: '#181818',
+      paper: '#000000'
+    },
   }
   // fontFamily: font // as an aside, highly recommend importing roboto font for Material UI projects! Looks really nice
 });

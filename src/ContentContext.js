@@ -1,6 +1,8 @@
 import { createContext } from 'react';
 
-export const ContentContext = createContext({
+const ContentContext = createContext({
   content: '',
   setContent: () => {},
 });
+
+export default ContentContext;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContentContext } from '../ContentContext';
+import ContentContext from '../ContentContext';
 
 import Tools from '../pages/Tools';
 import Games from '../pages/Games';

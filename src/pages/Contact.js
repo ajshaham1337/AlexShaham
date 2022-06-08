@@ -1,31 +1,50 @@
 import React from 'react';
-import { Grid, Typography, Container, Toolbar } from "@mui/material"
+import { Link, Button, Grid, Typography, Container, Toolbar } from "@mui/material"
 import { GitHub, Email, Computer } from '@mui/icons-material/'
 // import DiscordIcon from '../images/DiscordIcon';
+
+import resume from '../images/resume.pdf';
 
 function Contact() {
   return (
     <Container>
       <Toolbar sx={{minHeight: '20px !important'}}/>
-      <Typography variant="h4" align="center" color="text.primary" gutterBottom>
-        Contact
+      <Typography variant="h5" align="center" color="text.primary" gutterBottom>
+        CONTACT
       </Typography>
-      {/* blob here for what to contact for etc... */}
-      <Typography variant="h6" align="center" color="text.primary" gutterBottom>
-        Feel free to reach out for any potential business inquiries you may have!
+      <Typography variant="h6" align="center" color="text.secondary" gutterBottom>
+        I am currently looking for work opportunities:
+        <Link href={resume} target="_blank" underline="none"> RESUME</Link>
       </Typography>
-      <Grid container direction="column" alignItems="left">
-        <Grid item>
-          <Email/> ajshaham@gmail.com
+      <Typography variant="h6" align="center" color="text.secondary" gutterBottom>
+        Feel free to reach out to me for any business or gaming inquiries you may have!
+      </Typography>
+      <Grid container>
+        <Grid item xs={12} md={6} lg={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Grid container direction="column" alignItems="center">
+            <Button><Email sx={{ fontSize: '100px' }} /></Button>
+            <Typography /> Email: ajshaham@gmail.com
+          </Grid>
         </Grid>
-        <Grid item>
-          <GitHub/> https://github.com/ajshaham1337
+        <Grid item xs={12} md={6} lg={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Grid container direction="column" alignItems="center">
+            <Button><GitHub sx={{ fontSize: '100px' }} /></Button>
+            <Typography /> GitHub: https://github.com/ajshaham1337
+          </Grid>
         </Grid>
-        <Grid item>
-          <Computer/> Discord: Nuja#1388
+        {/* <Grid item xs={12} md={6} lg={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Grid container direction="column" alignItems="center">
+          <Button><Article sx={{ fontSize: '100px' }} /></Button>
+            <Typography /> Resume: ...
+          </Grid>
+        </Grid> */}
+        <Grid item xs={12} md={6} lg={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Grid container direction="column" alignItems="center">
+            <Button><Computer sx={{ fontSize: '100px' }} /></Button>
+            <Typography /> Discord: Nuja#1388
+          </Grid>
         </Grid>
       </Grid>
-      <Toolbar sx={{minHeight: '20px !important'}}/>
     </Container>
   );
 }

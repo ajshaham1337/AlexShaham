@@ -2,7 +2,7 @@ import * as React from 'react';
 import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Button, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import { ContentContext } from '../ContentContext';
+import ContentContext from '../ContentContext';
 
 const pages = ['Games', 'Tools', 'About', 'Contact'];
 
@@ -27,7 +27,7 @@ function ResponsiveAppBar() {
   console.log(content); // to stop warning
 
   return (
-    <AppBar position="static" sx={{ elevation: 2.0, backgroundColor: '#3f51b5' }}>
+    <AppBar position="static" sx={{ elevation: 2.0, bgcolor: 'rgb(44, 56, 126)' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -46,7 +46,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            Alex Shaham
+            ALEX SHAHAM
           </Typography>
           
           {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
@@ -75,6 +75,7 @@ function ResponsiveAppBar() {
                 key={page}
                 onClick={() => handleSetContent(page)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                size="large"
               >
                 {page}
               </Button>

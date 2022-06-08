@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, CardContent, CardMedia, Typography, Link, CardActionArea, CardActions } from '@mui/material';
+import { Button, Card, CardContent, CardMedia, Typography, CardActionArea, CardActions } from '@mui/material';
 
 // https://gitlab.com/gifreife/cse183-assignment8-group2/-/tree/main/
 // StarIcon import...
@@ -24,10 +24,10 @@ function ProjectCard({project}) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions sx={{ }}>
-        <Link href={project.link} target="_blank" variant="h6" underline="none">
+      <CardActions sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Button href={project.link} target="_blank" variant="outlined">
           Playable Link
-        </Link>
+        </Button>
       </CardActions>
     </Card>
   );
