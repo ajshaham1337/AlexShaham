@@ -2,9 +2,9 @@ import * as React from 'react';
 import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Button, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import ContentContext from '../ContentContext';
+import ContentContext from '../utility/ContentContext';
 
-const pages = ['Games', 'Tools', 'About', 'Contact'];
+const pages = ['Portfolio', 'About', 'Contact'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

@@ -1,18 +1,16 @@
 import React from 'react';
-import ContentContext from '../ContentContext';
 
-import Tools from '../pages/Tools';
-import Games from '../pages/Games';
+import ContentContext from '../utility/ContentContext';
+
+import Portfolio from '../pages/Portfolio';
 import Contact from '../pages/Contact';
 import About from '../pages/About';
 
 function ResponsiveBody() {
   const { content } = React.useContext(ContentContext);
 
-  if (content === 'Games') {
-    return(<Games/>);
-  } else if (content === 'Tools') {
-    return(<Tools/>);
+  if (content === 'Portfolio') {
+    return(<Portfolio/>);
   } else if (content === 'About') {
     return(<About/>);
   } else if (content === 'Contact') {

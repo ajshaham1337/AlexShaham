@@ -1,0 +1,9 @@
+TODO List:
+  1. finish the tabs function for portfolio tab. (DONE)
+  2. add a router (NEXT)
+  3. finish cleaning up about me page and editing content
+  4. mobile app dropdown menu -> dialog?
+  5. further organize tabs, includes database. then style the divider?
+  6. make popup dialogues when clicking on game images that propagates the info and more?
+  7. fix contact page buttons and styling (do after router)
+  8. clean up code, further look at mobile/tablet support, uniformize code, further componentize items?: i.e. context. 
