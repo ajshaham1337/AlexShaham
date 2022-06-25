@@ -59,7 +59,7 @@ function App() {
             {selectedTabNumber === 2 && <Contact />} */}
             <Routes>
               <Route path="/" element={<Portfolio />} /> 
-              <Route path="/portfolio" element={<Navigate to="/" />} />
+              {/* <Route path="/portfolio" element={<Navigate to="/" />} /> */}
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/*" element={<Missing />} />
