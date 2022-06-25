@@ -7,15 +7,15 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
-import Missing from './pages/Missing';
 
-const ROUTE_NOT_FOUND = -1;
+// const ROUTE_NOT_FOUND = -1;
 const routes = [
-  { label: 'Portfolio', path: '/', PageComponent: Portfolio },
-  { label: 'About', path: '/About', PageComponent: About },
-  { label: 'Contact', path: '/Contact', PageComponent: Contact },
+  { label: 'Portfolio', path: '/Portfolio/', PageComponent: Portfolio },
+  { label: 'About', path: '/Portfolio/About', PageComponent: About },
+  { label: 'Contact', path: '/Portfolio/Contact', PageComponent: Contact },
 ];
-const currentRouteId = routes.findIndex(({ path }) => path === window.location.pathname || path.includes(window.location.pathname));
+// const currentRouteId = routes.findIndex(({ path }) => path === window.location.pathname || path.includes(window.location.pathname));
+const currentRouteId = routes.findIndex(({ path }) => path === window.location.pathname);
 
 function LinkTab(props) {
   return (
@@ -76,20 +76,8 @@ function TopBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              display: { xs: 'none', sm: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.1rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
+          <Typography variant="h5" noWrap component="a" href="/Portfolio/"
+            sx={{ display: { xs: 'none', sm: 'flex' }, fontFamily: 'monospace', fontWeight: 700, letterSpacing: '.1rem', color: 'inherit', textDecoration: 'none', }}>
             ALEX SHAHAM
           </Typography>
 

@@ -1,8 +1,15 @@
 TODO List:
-  2. add a router (DONE)
-    a. fix tab placement for topbar
-    b. ^ for portfolio tabs
-    c. mobile tabs as well w/ dialog
+  2. router done?
+    make sure that everything works on deployment.
+      ...CANT FIND IMAGES ANYWHERE? WHY DONT THEY LOAD?
+
+  2.75. make all the fixes discussed with colby. refer to "smelly"
+    refactor portfolio's smelliness (i.e. shift tabs/content into programmatic form - .map format)
+    use hoisting for TopBar.js const routes - originate in App.js - with routes/tabs.
+      move the page components to be called in topbar?
+        refactor into .map format.
+
+  2.99. add a footer?
 
   3. finish cleaning up about me page and editing content
   7. fix contact page buttons and styling

@@ -1,7 +1,7 @@
 {
     "games": [
         {
-            "picture": "/Portfolio/static/media/qoth.681ba46a5db2c31bd98c.png", 
+            "picture": "qoth", 
             "title": "Queen Of The Hill",
             "role": "Role: Programmer",
             "code": "Code: Javascript",
@@ -10,7 +10,7 @@
             "id": "g0"
         },
         {
-            "picture": "/Portfolio/static/media/wordlecube.fb30520e87484eb76a7b.png", 
+            "picture": "wordlecube", 
             "title": "Wordle Cube",
             "role": "Role: Solo Project",
             "code": "Code: C# & Unity",
@@ -19,7 +19,7 @@
             "id": "g1"
         },
         {
-            "picture": "/Portfolio/static/media/keepieuppies.a634417d981c01d5fa23.png", 
+            "picture": "keepieuppies", 
             "title": "Keepie Uppies",
             "role": "Role: Programmer",
             "code": "Code: C# & Unity - Android",
@@ -28,7 +28,7 @@
             "id": "g2"
         },
         {
-            "picture": "/Portfolio/static/media/puffedup.392dda579e0e6a01543b.png",
+            "picture": "puffedup",
             "title": "Puffed Up",
             "role": "Role: Programmer & Producer",
             "code": "Code: Javascript & Phaser3",
@@ -37,7 +37,7 @@
             "id": "g3"
         },
         {
-            "picture": "/Portfolio/static/media/barf.5e44d3bd5e86a1ff0c70.png",
+            "picture": "barf",
             "title": "Barf",
             "role": "Role: Programmer & Producer",
             "code": "Code: Javascript & Phaser3",
@@ -46,7 +46,7 @@
             "id": "g4"
         },
         {
-            "picture": "/Portfolio/static/media/retrosu.99e5a7bcc4d50e7299f8.png",
+            "picture": "retrosu",
             "title": "Retrosu",
             "role": "Role: Programmer",
             "code": "Code: Javascript & Crisp-game-lib",
@@ -55,7 +55,7 @@
             "id": "g5"
         },
         {
-            "picture": "/Portfolio/static/media/beastwithin.975507d78661f6570e4d.png",
+            "picture": "beastwithin",
             "title": "Beast Within",
             "role": "Role: Programmer & Producer",
             "code": "Code: Javascript & Phaser3",
@@ -66,7 +66,7 @@
     ],
     "tools": [
         {
-            "picture": "/Portfolio/static/media/fakebookmarketplace.2206970401e33505e0c8.png", 
+            "picture": "fakebookmarketplace", 
             "title": "Fakebook Marketplace",
             "role": "Role: Front-End Programmer",
             "code": "Code: Javascript & React & MUI",
@@ -75,7 +75,7 @@
             "id": "t0"
         },
         {
-            "picture": "/Portfolio/static/media/portfolio.91d700d5df1639177d56.png", 
+            "picture": "portfolio", 
             "title": "Portfolio",
             "role": "Role: Solo Project",
             "code": "Code: Javascript & React & MUI",
@@ -84,7 +84,7 @@
             "id": "t1"
         },
         {
-            "picture": "/Portfolio/static/media/cloato.0c5de7b43d72dea80f87.png",
+            "picture": "cloato",
             "title": "Cloato",
             "role": "Role: Designer",
             "code": "Code: N/A - Figma",
@@ -93,7 +93,7 @@
             "id": "t2"
         },
         {
-            "picture": "/Portfolio/static/media/emailapp.5738e8e26dde841f49be.png", 
+            "picture": "emailapp", 
             "title": "Email App",
             "role": "Role: Solo Project",
             "code": "Code: Javascript & React & MUI",
@@ -102,7 +102,7 @@
             "id": "t3"
         },
         {
-            "picture": "/Portfolio/static/media/calendarapp.2098d88ce41eda913f62.png", 
+            "picture": "calendarapp", 
             "title": "Calender App",
             "role": "Role: Solo Project",
             "code": "Code: Javascript & React",
