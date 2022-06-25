@@ -4,25 +4,26 @@ import PropTypes from 'prop-types'
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import WebIcon from '@mui/icons-material/Web';
 
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from '../ProjectCard';
 
-import TabContext from '../utility/TabContext';
+import TabContext from '../../utility/TabContext';
 
-import data from '../data/db.json';
+import data from '../../data/db.json';
 
-import qoth from '../images/qoth.png';
-import wordlecube from '../images/wordlecube.png';
-import keepieuppies from '../images/keepieuppies.png';
-import puffedup from '../images/puffedup.png';
-import barf from '../images/barf.png';
-import restrosu from '../images/retrosu.png';
-import beastwithin from '../images/beastwithin.png';
-import fakebookmarketplace from '../images/fakebookmarketplace.png';
-import portfolio from '../images/portfolio.png';
-import emailapp from '../images/emailapp.png';
-import calendarapp from '../images/calendarapp.png';
-import cloato from '../images/cloato.png';
-console.log(qoth, wordlecube, keepieuppies, puffedup, barf, restrosu, beastwithin, fakebookmarketplace, portfolio, cloato, emailapp, calendarapp);
+/* eslint-disable */
+import qoth from '../../images/qoth.png';
+import wordlecube from '../../images/wordlecube.png';
+import keepieuppies from '../../images/keepieuppies.png';
+import puffedup from '../../images/puffedup.png';
+import barf from '../../images/barf.png';
+import restrosu from '../../images/retrosu.png';
+import beastwithin from '../../images/beastwithin.png';
+import fakebookmarketplace from '../../images/fakebookmarketplace.png';
+import portfolio from '../../images/portfolio.png';
+import emailapp from '../../images/emailapp.png';
+import calendarapp from '../../images/calendarapp.png';
+import cloato from '../../images/cloato.png';
+/* eslint-enable */
 
 // <Toolbar sx={{minHeight: '20px !important'}}/>
 
@@ -81,20 +82,22 @@ function Portfolio() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs value={tab} onChange={handleChange} centered aria-label="tabs">
-          <Tab icon={<SportsEsportsIcon/>} label="Games" {...a11yProps(0)} />
-          <Tab icon={<WebIcon/>} label="Tools" {...a11yProps(1)} />
-        </Tabs>
+    <div className='Portfolio'>
+      <Box sx={{ width: "100%" }}>
+        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <Tabs value={tab} onChange={handleChange} centered aria-label="tabs">
+            <Tab icon={<SportsEsportsIcon/>} label="Games" {...a11yProps(0)} />
+            <Tab icon={<WebIcon/>} label="Tools" {...a11yProps(1)} />
+          </Tabs>
+        </Box>
+        <TabPanel value={tab} index={0}>
+          {PropagateData(data.games)}
+        </TabPanel>
+        <TabPanel value={tab} index={1}>
+          {PropagateData(data.tools)}
+        </TabPanel>
       </Box>
-      <TabPanel value={tab} index={0}>
-        {PropagateData(data.games)}
-      </TabPanel>
-      <TabPanel value={tab} index={1}>
-        {PropagateData(data.tools)}
-      </TabPanel>
-    </Box>
+    </div>
   );
 }
   

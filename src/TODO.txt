@@ -1,9 +1,19 @@
 TODO List:
-  1. finish the tabs function for portfolio tab. (DONE)
-  2. add a router (NEXT)
+  2. add a router (DONE)
+    a. fix tab placement for topbar
+    b. ^ for portfolio tabs
+    c. mobile tabs as well w/ dialog
+
   3. finish cleaning up about me page and editing content
-  4. mobile app dropdown menu -> dialog?
+  7. fix contact page buttons and styling
+  
+  9. change appbar to tab based? (in progress)
+    a. mobile app dropdown menu -> dialog?
+
   5. further organize tabs, includes database. then style the divider?
-  6. make popup dialogues when clicking on game images that propagates the info and more?
-  7. fix contact page buttons and styling (do after router)
+  11. refactor about content into a json file
+
+  6. make popup dialog when clicking on game images that propagates the info and more?
+
   8. clean up code, further look at mobile/tablet support, uniformize code, further componentize items?: i.e. context. 
+  10. write out tests; arialabel stuff for this...

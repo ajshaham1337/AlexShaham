@@ -2,7 +2,9 @@ import React from 'react';
 import { List, ListItem, ListItemText, Box, Grid, Typography, Container, Toolbar } from "@mui/material"
 
 function About() {
-    return (
+  return (
+    <div className='About'>
+      {/* <TopBar /> */}
       <Container>
         <Toolbar sx={{minHeight: '20px !important'}}/>
         <Typography variant="h5" align="center" color="text.primary" gutterBottom>
@@ -85,8 +87,9 @@ function About() {
           </Grid>
         </Grid>
       </Container>
-    );
-  }
+    </div>
+  );
+}
   
-  export default About;
+export default About;
   
