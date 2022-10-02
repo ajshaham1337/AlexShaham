@@ -8,23 +8,20 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import WebDev from './pages/WebDev';
 import GameDev from './pages/GameDev';
+
 // const ROUTE_NOT_FOUND = -1;
 const routes = [
-  { label: 'WebDev', path: '/Portfolio/WebDev', PageComponent: WebDev, PageId: 0 },
-  { label: 'GameDev', path: '/Portfolio/GameDev', PageComponent: GameDev, PageId: 1 },
-  { label: 'About', path: '/Portfolio/About', PageComponent: About, PageId: 2 },
-  { label: 'Contact', path: '/Portfolio/Contact', PageComponent: Contact, PageId: 3 },
+  { label: 'WebDev', path: '/Portfolio/WebDev', PageComponent: WebDev },
+  { label: 'GameDev', path: '/Portfolio/GameDev', PageComponent: GameDev },
+  { label: 'About', path: '/Portfolio/About', PageComponent: About },
+  { label: 'Contact', path: '/Portfolio/Contact', PageComponent: Contact },
 ];
-// const currentRouteId = routes.findIndex(({ path }) => path === window.location.pathname || path.includes(window.location.pathname));
 const currentRouteId = routes.findIndex(({ path }) => path === window.location.pathname);
 
 function LinkTab(props) {
   return (
     <Tab
       component={Link}
-      //   onClick={(event) => {
-      //     event.preventDefault();
-      //   }}
       to={props.path}
       {...props}
     />
@@ -39,15 +36,6 @@ function allyProps(index) {
 }
 
 function TopBar() {
-  const pages = ['WebDev', 'GameDev', 'About', 'Contact'];
-
-  // const [value, setValue] = React.useState(0);
-
-  // const handleChange = (event, newValue) => {
-  //   setValue(newValue);
-  //   navigate("/about")
-  // };
-
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -61,13 +49,11 @@ function TopBar() {
   const { content, setContent } = React.useContext(ContentContext);
 
   const handleSetContent = (p) => {
-    console.log('p:', p);
     setContent(p);
     handleCloseNavMenu();
   }
 
   const handleChangeContent = (event, newContent) => {
-    console.log('newContent:', newContent);
     setContent(newContent);
   }
 
@@ -139,11 +125,9 @@ function TopBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page, i) => (
-                <MenuItem key={page} onClick={() => handleSetContent(i)}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              {routes.map(({ label, path }, routeId) =>
+                <LinkTab component={NavLink} key={routeId} label={label} path={path} highlighted={(currentRouteId === routeId).toString()} {...allyProps(routeId)} />
+              )}
             </Menu>
           </Box>
         </Toolbar>
