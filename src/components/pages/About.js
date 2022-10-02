@@ -6,19 +6,16 @@ function About() {
     <div className='About'>
       {/* <TopBar /> */}
       <Container>
-        <Toolbar sx={{ minHeight: '20px !important' }} />
-        <Typography variant="h5" align="center" color="text.primary" gutterBottom>
-          ABOUT
-        </Typography>
+        <Toolbar sx={{ minHeight: '15px !important' }} />
         <Typography variant="h6" align="center" color="text.secondary" gutterBottom>
-          I am a fresh graduate from the University of California, Santa Cruz with a B.S. in Computer Science: Game Design...
+          I am a fresh graduate from the University of California, Santa Cruz with a B.S. in Computer Science: Game Design.
         </Typography>
-        <Toolbar sx={{ minHeight: '20px !important' }} />
+        <Toolbar sx={{ minHeight: '15px !important' }} />
         <Grid container>
           {/* all board/card games played */}
           <Grid item xs={12} md={6} lg={4} sx={{ display: 'flex', justifyContent: 'center' }}>
             <Grid container direction="column" alignItems="center">
-              <Typography>Games Played List (Digital/Analog) ???</Typography>
+              <Typography>Games Played List</Typography>
               <Box sx={{ width: '350px', backgroundColor: '#000000', border: '1px solid white' }}>
                 {/* https://mui.com/material-ui/react-list/ */}
                 <List>

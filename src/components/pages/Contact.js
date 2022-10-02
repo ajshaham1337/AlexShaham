@@ -10,10 +10,7 @@ function Contact() {
     <div className='Contact'>
       {/* <TopBar /> */}
       <Container>
-        <Toolbar sx={{minHeight: '20px !important'}}/>
-        <Typography variant="h5" align="center" color="text.primary" gutterBottom>
-          CONTACT
-        </Typography>
+        <Toolbar sx={{minHeight: '15px !important'}}/>
         <Typography variant="h6" align="center" color="text.secondary" gutterBottom>
           I am currently looking for work opportunities:
           <Link href={resume} target="_blank" underline="none"> RESUME</Link>
