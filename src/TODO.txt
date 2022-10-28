@@ -1,26 +1,15 @@
 TODO List:
-  2. router done?
-    make sure that everything works on deployment.
-      ...CANT FIND IMAGES ANYWHERE? WHY DONT THEY LOAD?
-
-  2.75. make all the fixes discussed with colby. refer to "smelly"
+  1. make all the fixes discussed with colby. refer to "smelly"
     refactor portfolio's smelliness (i.e. shift tabs/content into programmatic form - .map format)
     use hoisting for TopBar.js const routes - originate in App.js - with routes/tabs.
       move the page components to be called in topbar?
         refactor into .map format.
-
-  2.99. add a footer?
-
-  3. finish cleaning up about me page and editing content
+  2. set router w/ backend...
+  3. add a footer?
+  5. further organize tabs, includes database. then style the divider?
+  6. make popup dialog when clicking on game images that propagates the info and more?
   7. fix contact page buttons and styling
-  
+  8. clean up code, further look at mobile/tablet support, uniformize code, further componentize items?: i.e. context. 
   9. change appbar to tab based? (in progress)
     a. mobile app dropdown menu -> dialog?
-
-  5. further organize tabs, includes database. then style the divider?
-  11. refactor about content into a json file
-
-  6. make popup dialog when clicking on game images that propagates the info and more?
-
-  8. clean up code, further look at mobile/tablet support, uniformize code, further componentize items?: i.e. context. 
   10. write out tests; arialabel stuff for this...
