@@ -1,35 +1,42 @@
-import * as React from 'react';
-import { AppBar, Link, Tabs, Tab, Box, Toolbar, IconButton, Typography, Menu, Container } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import * as React from "react";
+import {
+  AppBar,
+  Link,
+  Tabs,
+  Tab,
+  Box,
+  Toolbar,
+  IconButton,
+  Typography,
+  Menu,
+  Container,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
-import ContentContext from '../utility/ContentContext';
-import { NavLink } from 'react-router-dom';
-import Contact from './pages/Contact';
-import WebDev from './pages/WebDev';
-import GameDev from './pages/GameDev';
+import ContentContext from "../utility/ContentContext";
+import { NavLink } from "react-router-dom";
+import Contact from "./pages/Contact";
+import WebDev from "./pages/WebDev";
+import GameDev from "./pages/GameDev";
 
 // const ROUTE_NOT_FOUND = -1;
 const routes = [
-  { label: 'WebDev', path: '/Portfolio/WebDev', PageComponent: WebDev },
-  { label: 'GameDev', path: '/Portfolio/GameDev', PageComponent: GameDev },
-  { label: 'Contact', path: '/Portfolio/Contact', PageComponent: Contact },
+  { label: "WebDev", path: "/Portfolio/WebDev", PageComponent: WebDev },
+  { label: "GameDev", path: "/Portfolio/GameDev", PageComponent: GameDev },
+  { label: "Contact", path: "/Portfolio/Contact", PageComponent: Contact },
 ];
-const currentRouteId = routes.findIndex(({ path }) => path === window.location.pathname);
+const currentRouteId = routes.findIndex(
+  ({ path }) => path === window.location.pathname
+);
 
 function LinkTab(props) {
-  return (
-    <Tab
-      component={Link}
-      to={props.path}
-      {...props}
-    />
-  );
+  return <Tab component={Link} to={props.path} {...props} />;
 }
 
 function allyProps(index) {
   return {
     id: `nav-tab-${index}`,
-    "aria-controls": `nav-tabpanel-${index}`
+    "aria-controls": `nav-tabpanel-${index}`,
   };
 }
 
@@ -48,15 +55,30 @@ function Header() {
 
   const handleChangeContent = (event, newContent) => {
     setContent(newContent);
-  }
+  };
 
   return (
-    <div className='Header'>
-      <AppBar position="static" sx={{ elevation: 2.0, bgcolor: 'rgb(44, 56, 126)' }}>
+    <div className="Header">
+      <AppBar
+        position="static"
+        sx={{ elevation: 2.0, bgcolor: "rgb(44, 56, 126)" }}
+      >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <Typography variant="h5" noWrap component="a" href="/Portfolio/"
-              sx={{ display: { xs: 'none', lg: 'flex' }, fontFamily: 'monospace', fontWeight: 700, letterSpacing: '.1rem', color: 'inherit', textDecoration: 'none', }}>
+            <Typography
+              variant="h5"
+              noWrap
+              component="a"
+              href="/Portfolio/"
+              sx={{
+                display: { xs: "none", lg: "flex" },
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".1rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
               ALEX SHAHAM
             </Typography>
 
@@ -67,27 +89,53 @@ function Header() {
               href=""
               sx={{
                 ml: 1,
-                display: { xs: 'flex', lg: 'none' },
+                display: { xs: "flex", lg: "none" },
                 flexGrow: 1,
-                fontFamily: 'monospace',
+                fontFamily: "monospace",
                 fontWeight: 700,
-                letterSpacing: '.1rem',
-                color: 'inherit',
-                textDecoration: 'none',
+                letterSpacing: ".1rem",
+                color: "inherit",
+                textDecoration: "none",
               }}
             >
               Alex Shaham
             </Typography>
 
-            <Box sx={{ justifyContent: 'flex-end', alignItems: 'flex-end', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              <Tabs value={content} onChange={handleChangeContent} aria-label="nav tabs">
-                {routes.map(({ label, path }, routeId) =>
-                  <LinkTab component={NavLink} key={routeId} label={label} path={path} color={"white"} highlighted={(currentRouteId === routeId).toString()} {...allyProps(routeId)} />
-                )}
+            <Box
+              sx={{
+                justifyContent: "flex-end",
+                alignItems: "flex-end",
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+              }}
+            >
+              <Tabs
+                value={content}
+                onChange={handleChangeContent}
+                aria-label="nav tabs"
+              >
+                {routes.map(({ label, path }, routeId) => (
+                  <LinkTab
+                    component={NavLink}
+                    key={routeId}
+                    label={label}
+                    path={path}
+                    color={"white"}
+                    highlighted={(currentRouteId === routeId).toString()}
+                    {...allyProps(routeId)}
+                  />
+                ))}
               </Tabs>
             </Box>
 
-            <Box sx={{ justifyContent: 'flex-end', alignItems: 'flex-end', flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <Box
+              sx={{
+                justifyContent: "flex-end",
+                alignItems: "flex-end",
+                flexGrow: 1,
+                display: { xs: "flex", md: "none" },
+              }}
+            >
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -102,23 +150,31 @@ function Header() {
                 id="menu-appbar"
                 anchorEl={anchorElNav}
                 anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
+                  vertical: "bottom",
+                  horizontal: "left",
                 }}
                 keepMounted
                 transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
+                  vertical: "top",
+                  horizontal: "left",
                 }}
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
                 sx={{
-                  display: { xs: 'block', md: 'none' },
+                  display: { xs: "block", md: "none" },
                 }}
               >
-                {routes.map(({ label, path }, routeId) =>
-                  <LinkTab component={NavLink} key={routeId} label={label} path={path} color={"white"} highlighted={(currentRouteId === routeId).toString()} {...allyProps(routeId)} />
-                )}
+                {routes.map(({ label, path }, routeId) => (
+                  <LinkTab
+                    component={NavLink}
+                    key={routeId}
+                    label={label}
+                    path={path}
+                    color={"white"}
+                    highlighted={(currentRouteId === routeId).toString()}
+                    {...allyProps(routeId)}
+                  />
+                ))}
               </Menu>
             </Box>
           </Toolbar>
