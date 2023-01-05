@@ -1,0 +1,79 @@
+[
+  {
+    "picture": "fakebookmarketplace",
+    "title": "Fakebook Marketplace",
+    "subtitle": "Front-End Developer [Team Size: 3]",
+    "description": "A recreation of Facebook's world famous Market Place. Built with React/MUI/JS. (code hidden per teacher's request - contact me to view)",
+    "link": "https://www.youtube.com/watch?v=fYKFSpuTiNs"
+  },
+  {
+    "picture": "qoth",
+    "title": "Queen Of The Hill",
+    "subtitle": "Programmer & Producer [Team Size: 6]",
+    "description": "An idle-clicking game with an ant inspired theme. Built with JS.",
+    "link": "https://ajshaham1337.github.io/Queen-of-The-Hill/"
+  },
+  {
+    "picture": "wordlecube",
+    "title": "Wordle Cube",
+    "subtitle": "Programmer [Team Size: 1]",
+    "description": "A Wordle clone based on the premise of solving a Rubik's Cube. Built with Unity/C#.",
+    "link": "https://ajshaham1337.github.io/WordleCube/"
+  },
+  {
+    "picture": "portfolio",
+    "title": "Portfolio",
+    "subtitle": "Developer [Team Size: 1]",
+    "description": "A personal portfolio made to showcase my work and tell you a bit more about myself. Built with React/Next/Bootstrap/JS",
+    "link": "https://ajshaham1337.github.io/Portfolio/"
+  },
+  {
+    "picture": "keepieuppies",
+    "title": "Keepie Uppies",
+    "subtitle": "Programmer [Team Size: 5]",
+    "description": "An infinite runner mobile game for android with multiple themes based on staying midair. Built with Unity/C#.",
+    "link": "https://play.google.com/store/apps/details?id=com.KU.com.unity.template.mobile2D"
+  },
+  {
+    "picture": "cloato",
+    "title": "Cloato",
+    "subtitle": "UI/UX Designer [Team Size: 4]",
+    "description": "A high-fi prototype created to help user's organize their closets and stay fashionable. Built with Figma.",
+    "link": "https://www.figma.com/proto/rQIynW40LoxaI7NnaTC9EQ/Cloato?node-id=52%3A535&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A51&show-proto-sidebar=1"
+  },
+  {
+    "picture": "emailapp",
+    "title": "Email App",
+    "subtitle": "Front-End Developer [Team Size: 1]",
+    "description": "A simple front-end email app as an intro to MUI using React/JS. (code hidden per teacher's request - contact me to view)",
+    "link": "https://github.com/ajshaham1337/EmailApp"
+  },
+  {
+    "picture": "calendarapp",
+    "title": "Calender App",
+    "subtitle": "Front-End Developer [Team Size: 1]",
+    "description": "A web based calendar app. Built with React/JS. (code hidden per teacher's request - contact me to view)",
+    "link": "https://github.com/ajshaham1337/CalendarApp"
+  },
+  {
+    "picture": "puffedup",
+    "title": "Puffed Up",
+    "subtitle": "Progammer & Producer [Team Size: 3]",
+    "description": "A pufferfish knight navigates a dangerous dungeon. Built with Phaser3/JS.",
+    "link": "https://ajshaham1337.github.io/Puffed-Up/"
+  },
+  {
+    "picture": "barf",
+    "title": "Barf",
+    "subtitle": "Progammer & Producer [Team Size: 3]",
+    "description": "A salaryman engages in a night of shenanigans after clocking out from work.",
+    "link": "https://ajshaham1337.github.io/BarF/"
+  },
+  {
+    "picture": "beastwithin",
+    "title": "Beast Within",
+    "subtitle": "Programmer & Producer [Team Size: 2]",
+    "description": "A story based game jam for Ludum Dare 49 with the theme of 'stability'. Built with Phaser3/JS.",
+    "link": "https://ajshaham1337.github.io/Beast-Within/"
+  }
+]

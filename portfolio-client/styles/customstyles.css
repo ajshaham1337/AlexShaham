@@ -1,0 +1,74 @@
+.navbar-bot-padding {
+  margin-bottom: 90px;
+}
+
+/*
+  Use a variable width, like vw or %
+  to adapt the width relative to the
+  screen width. You may have to tweak
+  the vw or % at smaller breakpoints
+  as to not cut off your navbar content.
+*/
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .width-adjuster {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+  .width-adjuster {
+    width: 85vw;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 1025px) {
+  .width-adjuster {
+    width: 80vw;
+  }
+}
+@media screen and (min-width: 1401px) {
+  .width-adjuster {
+    width: 75vw;
+  }
+}
+
+.card-width {
+  max-width: 400px;
+}
+
+.page-container {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrap {
+  flex-grow: 1;
+}
+
+.footer {
+  width: 100%;
+}
+
+/* .page-container {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 11%;
+  clear: both;
+}
+
+.content-wrap {
+  overflow-y: scroll;
+}
+
+.footer {
+  position: absolute;
+  clear: both;
+
+  height: 10%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 25px;
+} */
