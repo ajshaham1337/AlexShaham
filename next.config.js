@@ -1,22 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
   // experimental: {
   //   webVitalsAttribution: ['CLS', 'FID', 'FCP', 'INP', 'LCP', 'TTFB']
   // }
-}
+};
 
-module.exports = nextConfig
-
-// /**
-//  * @type {import('next').NextConfig}
-//  */
-// const nextConfig = {
-//   images: {
-//     loader: "akamai",
-//     path: "",
-//   },
-//   assetPrefix: "./",
-// };
-
-// export default nextConfig;
+module.exports = nextConfig;
