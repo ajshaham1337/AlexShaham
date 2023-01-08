@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+// import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 function Contact() {
   const [subject, setSubject] = useState("Business Inquiry");
