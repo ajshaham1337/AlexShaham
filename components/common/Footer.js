@@ -24,7 +24,7 @@ function Footer() {
         className="text-center p-2"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        Alexander Shaham ® {new Date().getFullYear()}
+        Alexander Shaham ® {new Date().getFullYear()} | Updated: Jan 6 2023
       </div>
     </div>
   );

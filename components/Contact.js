@@ -77,7 +77,7 @@ function Contact() {
             Submit
           </button>
         </div>
-        <div className="card-footer text-center">
+        {/* <div className="card-footer text-center">
           <div className="row">
             <div className="col">
               {<AiOutlineMail color="white" size={22} />}
@@ -88,7 +88,7 @@ function Contact() {
               <p className="card-text">(323) 422-0701</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </form>
     </div>
   );
