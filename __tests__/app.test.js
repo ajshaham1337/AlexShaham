@@ -1,13 +1,16 @@
 import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from "@testing-library/react";
-import Footer from "../components/common/Footer";
-import Header from "../components/common/Header";
-import Projects from "../components/Projects";
-import About from "../components/About";
-import Contact from "../components/Contact";
+import renderer from "react-test-renderer";
+import Footer from "components/common/Footer";
+import Header from "components/common/Header";
+import About from "components/About";
+import Contact from "components/Contact";
+import Projects from "components/Projects";
 
 test("renders Footer successfully", () => {
-  render(<Footer />);
+  // render(<Footer />);
+  const tree = renderer.create(<Footer />).toJSON();
+  expect(tree).toMatchSnapshot();
 });
 
 test("renders Header successfully", () => {

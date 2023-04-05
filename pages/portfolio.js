@@ -1,6 +1,6 @@
-import Header from "../components/common/Header";
-import Footer from "../components/common/Footer";
-import Projects from "../components/Projects";
+import Header from "/components/common/Header";
+import Footer from "/components/common/Footer";
+import Projects from "/components/Projects";
 
 function Portfolio() {
   return (

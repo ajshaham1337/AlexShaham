@@ -1,8 +1,8 @@
 import * as React from "react";
-import Header from "../components/common/Header";
-import Footer from "../components/common/Footer";
-import Contact from "../components/Contact";
-import About from "../components/About";
+import Header from "/components/common/Header";
+import Footer from "/components/common/Footer";
+import Contact from "/components/Contact";
+import About from "/components/About";
 
 function Home() {
   return (

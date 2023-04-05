@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import data from "../data/projects";
-import { pictures } from "../data/pictures";
+import data from "/data/projects";
+import { pictures } from "/data/pictures";
 
 function Projects() {
   return (

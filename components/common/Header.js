@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { routes } from "../../data/routes";
+import { routes } from "/data/routes";
 
 function Header() {
   return (
